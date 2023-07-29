@@ -49,7 +49,7 @@ Contributions are welcome! If you have any feature suggestions, bug reports, or 
 
 ## About
 
-This project was developed by **[George Hill](https://github.com/georgeh1ll)**. It was created provide a simple tool for viewing and measuring DXF files after discovering the lack of opensource, free options for simple .dxf viewing. 
+This project was developed by **[George Hill](https://github.com/georgeh1ll)**. It was created provide a simple tool for viewing and measuring DXF files after discovering the lack of opensource, free options for simple .dxf viewing. Other applications claim to be free but end up being free trials or have certain features heavily limited, this is completely free and I will continue to work on this as I have a need for it in my day-to-day work. 
 
 ## Acknowledgments
 
