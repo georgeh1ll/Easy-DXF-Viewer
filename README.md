@@ -3,17 +3,23 @@
 
 DXF Viewer is a simple Python application that allows users to view and measure distances in DXF (Drawing Exchange Format) files. The application provides a graphical user interface (GUI) for loading DXF files, visualizing them on a canvas, and enabling a measure mode for distance measurement between two points.
 
-**Features**
+**Features
+**
+
 Open and view DXF files.
 Measure distances between two points in the DXF file.
 
-**Requirements for Python Verison**
+**Requirements for Python Verison
+**
+
 Python 3.x
 ezdxf (to handle DXF files)
 Matplotlib (for plotting)
 Tkinter (for the GUI)
 
-**How to Use**
+**How to Use
+**
+
 Clone the repository to your local machine.
 
 Install the required libraries using pip:
