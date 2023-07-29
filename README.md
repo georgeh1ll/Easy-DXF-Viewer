@@ -7,7 +7,7 @@
 
 - Open and view DXF files.
 - Measure distances between two points in the DXF file.
-- Display double-ended arrows and the distance value for measurements.
+- Display arrows and the distance value for measurements.
 - Clear measurement arrows and distance labels for taking new measurements.
 - Developed using Python and the Tkinter and Matplotlib libraries.
 
