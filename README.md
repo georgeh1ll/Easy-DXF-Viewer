@@ -18,12 +18,11 @@
 - Matplotlib (for plotting)
 - Tkinter (for the GUI)
 
-## How to Use
+## How to Use Python Version
 
 1. Clone the repository to your local machine.
-2. Install the required libraries using pip:
-3. Run the `dxf_viewer.py` script: dxf_viewer.py
-
+2. Install the required libraries using: "pip install -r requirements.txt" or manually. 
+3. Run the `dxf_viewer.py` script.
 4. The application will open in full-screen mode, and you will see the "Open DXF" button.
 5. Click the "Open DXF" button to load a DXF file for viewing.
 6. After loading the DXF file, the "Measure Mode" and "Clear Measurement" buttons will become active.
