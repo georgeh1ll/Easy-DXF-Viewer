@@ -1,2 +1,4 @@
 ezdxf
 matplotlib
+tkinter
+mplcursors
