@@ -19,7 +19,6 @@ Tkinter (for the GUI)
 
 **How to Use
 **
-
 Clone the repository to your local machine.
 
 Install the required libraries using pip:
