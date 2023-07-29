@@ -31,6 +31,17 @@
 9. The distance will be displayed on the plot.
 10. Click the "Clear Measurement" button to remove the measurement arrows and distance label and take a new measurement.
 
+## How to Use the Windows Version 
+
+1. Download and run the .exe file.
+2. The application will open in full-screen mode, and you will see the "Open DXF" button.
+3. Click the "Open DXF" button to load a DXF file for viewing.
+4. After loading the DXF file, the "Measure Mode" and "Clear Measurement" buttons will become active.
+5. Click the "Measure Mode" button to activate measure mode.
+6. Click on two points in the DXF plot to measure the distance between them.
+7. The distance will be displayed on the plot.
+8. Click the "Clear Measurement" button to remove the measurement arrows and distance label and take a new measurement.
+
 
 ## Contributing
 
