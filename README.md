@@ -9,7 +9,7 @@
 - Measure distances between two points in the DXF file.
 - Display arrows and the distance value for measurements.
 - Clear measurement arrows and distance labels for taking new measurements.
-- Developed using Python and the Tkinter and Matplotlib libraries.
+- Developed using Python and the Tkinter, ezdxf and Matplotlib libraries.
 
 ## Requirements
 
