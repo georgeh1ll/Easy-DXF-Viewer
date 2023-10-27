@@ -35,7 +35,7 @@
 
 ## How to Use the Windows Version 
 
-1. Locate the windows version of the program under the **[releases]([(https://github.com/georgeh1ll/Easy-DXF-Viewer/releases)])** section of the repository.
+1. Locate the windows version of the program under the **[releases](https://github.com/georgeh1ll/Easy-DXF-Viewer/releases)** section of the repository.
 2. Download the .exe file and run on a Windows machine. 
 3. The application will open in full-screen mode, and you will see the "Open DXF" button.
 4. Click the "Open DXF" button to load a DXF file for viewing.
