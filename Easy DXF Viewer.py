@@ -5,8 +5,6 @@ import mplcursors
 import tkinter as tk
 from tkinter import filedialog
 
-print('Start')
-
 current_dxf_path = None
 current_canvas = None
 measure_mode = False
