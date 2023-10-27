@@ -5,6 +5,8 @@ import mplcursors
 import tkinter as tk
 from tkinter import filedialog
 
+print('Start')
+
 current_dxf_path = None
 current_canvas = None
 measure_mode = False
@@ -28,15 +30,34 @@ def plot_distance_label(ax, x, y, distance):
     ax.text(x, y, f"Measurement: {distance:.2f} units", fontsize=12, color='k', ha='center', va='top')  # Set color to black and align top
 
 def translate_entities(entities):
-    min_x = min(ent.dxf.start[0] if ent.dxftype() == 'LINE' else ent.dxf.center[0] for ent in entities)
-    min_y = min(ent.dxf.start[1] if ent.dxftype() == 'LINE' else ent.dxf.center[1] for ent in entities)
+    min_x = float('inf')
+    min_y = float('inf')
 
+    # Find the minimum x and y coordinates in the drawing
+    for entity in entities:
+        if entity.dxftype() == 'LINE':
+            min_x = min(min_x, entity.dxf.start[0], entity.dxf.end[0])
+            min_y = min(min_y, entity.dxf.start[1], entity.dxf.end[1])
+        elif entity.dxftype() == 'CIRCLE':
+            min_x = min(min_x, entity.dxf.center[0] - entity.dxf.radius)
+            min_y = min(min_y, entity.dxf.center[1] - entity.dxf.radius)
+        elif entity.dxftype() == 'LWPOLYLINE':
+            vertices = list(entity.get_points('xy'))
+            for vertex in vertices:
+                min_x = min(min_x, vertex[0])
+                min_y = min(min_y, vertex[1])
+
+    # Translate entities based on the minimum x and y coordinates
     for entity in entities:
         if entity.dxftype() == 'LINE':
             entity.dxf.start = (entity.dxf.start[0] - min_x, entity.dxf.start[1] - min_y)
             entity.dxf.end = (entity.dxf.end[0] - min_x, entity.dxf.end[1] - min_y)
         elif entity.dxftype() == 'CIRCLE':
             entity.dxf.center = (entity.dxf.center[0] - min_x, entity.dxf.center[1] - min_y)
+        elif entity.dxftype() == 'LWPOLYLINE':
+            vertices = list(entity.get_points('xy'))
+            new_vertices = [(vertex[0] - min_x, vertex[1] - min_y) for vertex in vertices]
+            entity.set_points(new_vertices)
 
 def measure_distance():
     global measure_mode, selected_points
@@ -105,6 +126,12 @@ def visualize_dxf(dxf_file=None):
                 plot_line(ax, entity.dxf.start, entity.dxf.end)
             elif entity.dxftype() == 'CIRCLE':
                 plot_circle(ax, entity.dxf.center, entity.dxf.radius)
+            elif entity.dxftype() == 'LWPOLYLINE':
+                vertices = list(entity.get_points('xy'))
+                for i in range(len(vertices)):
+                    start = vertices[i]
+                    end = vertices[i -1]
+                    plot_line(ax, start, end)
 
         ax.set_aspect('equal')
         plt.title('DXF Viewer')
