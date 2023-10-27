@@ -5,6 +5,8 @@ import mplcursors
 import tkinter as tk
 from tkinter import filedialog
 
+print('Start')
+
 current_dxf_path = None
 current_canvas = None
 measure_mode = False
@@ -39,6 +41,10 @@ def translate_entities(entities):
         elif entity.dxftype() == 'CIRCLE':
             min_x = min(min_x, entity.dxf.center[0] - entity.dxf.radius)
             min_y = min(min_y, entity.dxf.center[1] - entity.dxf.radius)
+            if min_x < 1:
+                min_x=1
+            if min_y < 1:
+                min_y=1
         elif entity.dxftype() == 'LWPOLYLINE':
             vertices = list(entity.get_points('xy'))
             for vertex in vertices:
