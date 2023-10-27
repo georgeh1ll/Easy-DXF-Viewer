@@ -35,14 +35,15 @@
 
 ## How to Use the Windows Version 
 
-1. Download the 'Easy DXF Viewer Windows.exe' file.
-2. The application will open in full-screen mode, and you will see the "Open DXF" button.
-3. Click the "Open DXF" button to load a DXF file for viewing.
-4. After loading the DXF file, the "Measure Mode" and "Clear Measurement" buttons will become active.
-5. Click the "Measure Mode" button to activate measure mode.
-6. Click on two points in the DXF plot to measure the distance between them.
-7. The distance will be displayed on the plot.
-8. Click the "Clear Measurement" button to remove the measurement arrows and distance label and take a new measurement.
+1. Locate the windows version of the program under the **[releases]([(https://github.com/georgeh1ll/Easy-DXF-Viewer/releases)])** section of the repository.
+2. Download the .exe file and run on a Windows machine. 
+3. The application will open in full-screen mode, and you will see the "Open DXF" button.
+4. Click the "Open DXF" button to load a DXF file for viewing.
+5. After loading the DXF file, the "Measure Mode" and "Clear Measurement" buttons will become active.
+6. Click the "Measure Mode" button to activate measure mode.
+7. Click on two points in the DXF plot to measure the distance between them.
+8. The distance will be displayed on the plot.
+9. Click the "Clear Measurement" button to remove the measurement arrows and distance label and take a new measurement.
 
 
 ## Contributing
