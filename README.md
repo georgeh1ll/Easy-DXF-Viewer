@@ -1,7 +1,9 @@
 # Easy-DXF-Viewer
-![Screenshot 2023-07-29 195253](https://github.com/georgeh1ll/Easy-DXF-Viewer/assets/11806169/654db9c5-e5e0-4d3b-96b1-54d3fc53a820)
 
 **Easy DXF Viewer** is a simple Python application that allows users to view and measure distances in 2D DXF (Drawing Exchange Format) files. The application provides a graphical user interface (GUI) for loading DXF files, visualizing them on a canvas, and enabling a measure mode for distance measurement between two points.
+
+![Screenshot 2023-07-29 195253](https://github.com/georgeh1ll/Easy-DXF-Viewer/assets/11806169/654db9c5-e5e0-4d3b-96b1-54d3fc53a820)
+![Screenshot 2023-10-27 150903](https://github.com/georgeh1ll/Easy-DXF-Viewer/assets/11806169/78a37a1b-191d-4c22-b1ca-65d5710ce72e)
 
 ## Features
 
